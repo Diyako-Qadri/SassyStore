@@ -4,7 +4,7 @@ import { createContext, useContext, useState, ReactNode } from 'react';
 import { ProductTypes } from '@/utils/types';
 
 type CartContextType = {
-  cardItems: ProductTypes[] & { quantity: number };
+  cardItems: (ProductTypes & { quantity: number })[]; 
   addToCard: (product: ProductTypes) => void;
   removeFromCard: (id: number) => void;
 };
@@ -12,7 +12,7 @@ type CartContextType = {
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export const CardProvider = ({ children }: { children: ReactNode }) => {
-  const [cardItems, setCardItems] = useState<ProductTypes[]>([]);
+  const [cardItems, setCardItems] = useState<(ProductTypes & { quantity: number })[]>([]);
 
   const addToCard = (product: ProductTypes) => {
     setCardItems(prevItems => {
