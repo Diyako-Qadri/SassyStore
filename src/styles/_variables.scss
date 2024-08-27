@@ -1,0 +1,33 @@
+// screens 
+
+$bp-mobile: 375px;
+$bp-tablet: 768px;
+$bp-desktop: 991px;
+
+// spacing 
+
+$indent__base: 16px;
+$indent__s: $indent__base / 2;
+$indent__m: $indent__base * 1.5; 
+$indent__l: $indent__base * 2; 
+$indent__xl: $indent__base * 3; 
+$indent__xxl: $indent__base * 4; 
+$indent__xxxl: $indent__base * 5; 
+
+//colors 
+
+$color__white : #ffff;
+$color__yellow : #fbd743;
+$color__Red : #ff2f1f;
+$color__maliblue : #5bd9ff;
+$color__minsk : #363b81;
+$color__mine-shaft : #333;
+$color__gray : #919191;
+
+
+
+$color__white : #ffff;
+$color__mine-shaft : #333;
+
+$primary-text: $color__white;
+$primary-background: $color__mine-shaft;
